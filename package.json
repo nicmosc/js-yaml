@@ -1,6 +1,6 @@
 {
-  "name": "js-yaml",
-  "version": "3.13.1",
+  "name": "@nicmosc/js-yaml",
+  "version": "0.1.0",
   "description": "YAML 1.2 parser and serializer",
   "keywords": [
     "yaml",
@@ -16,7 +16,7 @@
     "Martin Grenfell <martin.grenfell@gmail.com> (http://got-ravings.blogspot.com)"
   ],
   "license": "MIT",
-  "repository": "nodeca/js-yaml",
+  "repository": "@nicmosc/js-yaml",
   "files": [
     "index.js",
     "lib/",
