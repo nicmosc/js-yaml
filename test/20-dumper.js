@@ -48,10 +48,10 @@ suite('Dumper', function () {
   });
 
   test('lokalise quote scalars with special chars', function () {
-    var serialized = yaml.dump({ k: 'v', empty: '', other: 'v k', with_chars: '${sdf}${sdf}' }, {
+    var serialized = yaml.dump({ k: 'v', empty: '', other: 'v k', with_chars: '%{sdf}%{sdf}' }, {
       schema: TEST_SCHEMA,
       scalarQuoteStyle: 'lokalise'
     });
-    assert.equal(serialized, "k: v\nempty: ''\nother: 'v k'\nwith_chars: '${sdf}${sdf}'\n");
+    assert.equal(serialized, "k: v\nempty: ''\nother: 'v k'\nwith_chars: '%{sdf}%{sdf}'\n");
   });
 });
